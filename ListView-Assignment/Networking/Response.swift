@@ -19,12 +19,19 @@ extension HTTPrequest {
             if let error = error {
                 completion(nil, response, error)
             } else {
-                do {
-                    let decodedModel = try JSONDecoder().decode(T.self, from: data!)
-                    completion(decodedModel, response, error)
+                
+                if let st = String(data: data!, encoding: .ascii), let data1 = st.data(using: .utf8) {
                     
-                } catch {
-                    completion(nil, response, ResponseError.serializationError)
+                    do {
+                        let decodedModel = try JSONDecoder().decode(T.self, from: data1)
+                        completion(decodedModel, response, error)
+                        
+                    } catch {
+                        completion(nil, response, ResponseError.serializationError)
+                    }
+                    
+                } else {
+                    completion(nil, response, error)
                 }
             }
         }
