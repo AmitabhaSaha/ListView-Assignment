@@ -14,8 +14,10 @@ class ListViewController: BaseViewController {
     
     var dataSource: ResponseModel? {
         didSet {
-            self.title = self.dataSource?.title
-            self.tableView.reloadData()
+            DispatchQueue.main.async {
+                self.title = self.dataSource?.title
+                self.tableView.reloadData()
+            }
         }
     }
     
@@ -32,6 +34,27 @@ class ListViewController: BaseViewController {
         
         setupTableView()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        self.showSpinner()
+        getListData { (_) in
+            self.hideSpinner()
+        }
+    }
+    
+    func getListData(completion: ((_ success: Bool)->())? = nil) {
+        APIManager.getListData { (result) in
+            switch result {
+            case .success(let response):
+                self.dataSource = response
+                completion?(true)
+            case .failure(let error):
+                print(error)
+                completion?(false)
+            }
+        }
+    }
 
     func setupTableView() {
         
@@ -46,13 +69,18 @@ class ListViewController: BaseViewController {
         tableView.rightAnchor.constraint(equalTo:view.safeAreaLayoutGuide.rightAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo:view.safeAreaLayoutGuide.bottomAnchor).isActive = true
         
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "ListTableViewCell")
+        tableView.register(ListCell.self, forCellReuseIdentifier: "ListTableViewCell")
         tableView.rowHeight = UITableView.automaticDimension
         tableView.addSubview(self.refreshControl)
     }
     
     @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
-        self.refreshControl.endRefreshing()
+        
+        getListData { [weak self] (completed) in
+            DispatchQueue.main.async {
+                self?.refreshControl.endRefreshing()
+            }
+        }
     }
 }
 
@@ -68,8 +96,23 @@ extension ListViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell.init(style: .subtitle, reuseIdentifier: "ListTableViewCell")
-        return cell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "ListTableViewCell", for: indexPath) as? ListCell {
+            guard let dataSource = dataSource, let rows = dataSource.rows  else { return cell }
+            
+            cell.setDataModel(model: rows[indexPath.row])
+            cell.selectionStyle = .none
+            
+            guard let url = rows[indexPath.row].imageHref  else {
+                cell.loadImageIfRequired(from: nil)
+                return cell
+            }
+            
+            cell.loadImageIfRequired(from: url)
+            
+            return cell
+        } else {
+            return UITableViewCell()
+        }
     }
 }
 
