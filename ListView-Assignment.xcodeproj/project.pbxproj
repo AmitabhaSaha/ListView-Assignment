@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A760441928552410E3D78D72 /* Pods_ListView_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F993CEE46E714404250F44D /* Pods_ListView_Assignment.framework */; };
+		EBFAD24E244028DC00A0BC15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFAD24D244028DC00A0BC15 /* AppDelegate.swift */; };
+		EBFAD250244028DC00A0BC15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFAD24F244028DC00A0BC15 /* SceneDelegate.swift */; };
+		EBFAD252244028DC00A0BC15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFAD251244028DC00A0BC15 /* ViewController.swift */; };
+		EBFAD255244028DC00A0BC15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBFAD253244028DC00A0BC15 /* Main.storyboard */; };
+		EBFAD257244028DF00A0BC15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBFAD256244028DF00A0BC15 /* Assets.xcassets */; };
+		EBFAD25A244028DF00A0BC15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBFAD258244028DF00A0BC15 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F993CEE46E714404250F44D /* Pods_ListView_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ListView_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45ACFA74BA889A8764EA118C /* Pods-ListView-Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListView-Assignment.release.xcconfig"; path = "Target Support Files/Pods-ListView-Assignment/Pods-ListView-Assignment.release.xcconfig"; sourceTree = "<group>"; };
+		ABEF85F80094D9719EB30DCA /* Pods-ListView-Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListView-Assignment.debug.xcconfig"; path = "Target Support Files/Pods-ListView-Assignment/Pods-ListView-Assignment.debug.xcconfig"; sourceTree = "<group>"; };
+		EBFAD24A244028DC00A0BC15 /* ListView-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ListView-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBFAD24D244028DC00A0BC15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EBFAD24F244028DC00A0BC15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EBFAD251244028DC00A0BC15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EBFAD254244028DC00A0BC15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBFAD256244028DF00A0BC15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBFAD259244028DF00A0BC15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EBFAD25B244028DF00A0BC15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBFAD247244028DC00A0BC15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A760441928552410E3D78D72 /* Pods_ListView_Assignment.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F5B59B7F0A55A4C05F47707 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABEF85F80094D9719EB30DCA /* Pods-ListView-Assignment.debug.xcconfig */,
+				45ACFA74BA889A8764EA118C /* Pods-ListView-Assignment.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D288177CFFC81030D432D311 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F993CEE46E714404250F44D /* Pods_ListView_Assignment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBFAD241244028DC00A0BC15 = {
+			isa = PBXGroup;
+			children = (
+				EBFAD24C244028DC00A0BC15 /* ListView-Assignment */,
+				EBFAD24B244028DC00A0BC15 /* Products */,
+				0F5B59B7F0A55A4C05F47707 /* Pods */,
+				D288177CFFC81030D432D311 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EBFAD24B244028DC00A0BC15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBFAD24A244028DC00A0BC15 /* ListView-Assignment.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBFAD24C244028DC00A0BC15 /* ListView-Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				EBFAD2612440297100A0BC15 /* ApplicationDelagates */,
+				EBFAD251244028DC00A0BC15 /* ViewController.swift */,
+				EBFAD253244028DC00A0BC15 /* Main.storyboard */,
+				EBFAD256244028DF00A0BC15 /* Assets.xcassets */,
+				EBFAD258244028DF00A0BC15 /* LaunchScreen.storyboard */,
+				EBFAD25B244028DF00A0BC15 /* Info.plist */,
+			);
+			path = "ListView-Assignment";
+			sourceTree = "<group>";
+		};
+		EBFAD2612440297100A0BC15 /* ApplicationDelagates */ = {
+			isa = PBXGroup;
+			children = (
+				EBFAD24D244028DC00A0BC15 /* AppDelegate.swift */,
+				EBFAD24F244028DC00A0BC15 /* SceneDelegate.swift */,
+			);
+			path = ApplicationDelagates;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBFAD249244028DC00A0BC15 /* ListView-Assignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBFAD25E244028DF00A0BC15 /* Build configuration list for PBXNativeTarget "ListView-Assignment" */;
+			buildPhases = (
+				0C995CB799D4869CA228518F /* [CP] Check Pods Manifest.lock */,
+				EBFAD246244028DC00A0BC15 /* Sources */,
+				EBFAD247244028DC00A0BC15 /* Frameworks */,
+				EBFAD248244028DC00A0BC15 /* Resources */,
+				28A8FEDFBDEEF1A5D7047208 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ListView-Assignment";
+			productName = "ListView-Assignment";
+			productReference = EBFAD24A244028DC00A0BC15 /* ListView-Assignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBFAD242244028DC00A0BC15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Amitabha;
+				TargetAttributes = {
+					EBFAD249244028DC00A0BC15 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = EBFAD245244028DC00A0BC15 /* Build configuration list for PBXProject "ListView-Assignment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBFAD241244028DC00A0BC15;
+			productRefGroup = EBFAD24B244028DC00A0BC15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBFAD249244028DC00A0BC15 /* ListView-Assignment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBFAD248244028DC00A0BC15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBFAD25A244028DF00A0BC15 /* LaunchScreen.storyboard in Resources */,
+				EBFAD257244028DF00A0BC15 /* Assets.xcassets in Resources */,
+				EBFAD255244028DC00A0BC15 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C995CB799D4869CA228518F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ListView-Assignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28A8FEDFBDEEF1A5D7047208 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ListView-Assignment/Pods-ListView-Assignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ListView-Assignment/Pods-ListView-Assignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ListView-Assignment/Pods-ListView-Assignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBFAD246244028DC00A0BC15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBFAD252244028DC00A0BC15 /* ViewController.swift in Sources */,
+				EBFAD24E244028DC00A0BC15 /* AppDelegate.swift in Sources */,
+				EBFAD250244028DC00A0BC15 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EBFAD253244028DC00A0BC15 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBFAD254244028DC00A0BC15 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EBFAD258244028DF00A0BC15 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBFAD259244028DF00A0BC15 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBFAD25C244028DF00A0BC15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EBFAD25D244028DF00A0BC15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBFAD25F244028DF00A0BC15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABEF85F80094D9719EB30DCA /* Pods-ListView-Assignment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PP64RT7P8Z;
+				INFOPLIST_FILE = "ListView-Assignment/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amitabha.ListView-Assignment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBFAD260244028DF00A0BC15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45ACFA74BA889A8764EA118C /* Pods-ListView-Assignment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PP64RT7P8Z;
+				INFOPLIST_FILE = "ListView-Assignment/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amitabha.ListView-Assignment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBFAD245244028DC00A0BC15 /* Build configuration list for PBXProject "ListView-Assignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBFAD25C244028DF00A0BC15 /* Debug */,
+				EBFAD25D244028DF00A0BC15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBFAD25E244028DF00A0BC15 /* Build configuration list for PBXNativeTarget "ListView-Assignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBFAD25F244028DF00A0BC15 /* Debug */,
+				EBFAD260244028DF00A0BC15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBFAD242244028DC00A0BC15 /* Project object */;
+}
