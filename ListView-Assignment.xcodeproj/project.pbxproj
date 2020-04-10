@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		A760441928552410E3D78D72 /* Pods_ListView_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F993CEE46E714404250F44D /* Pods_ListView_Assignment.framework */; };
 		EBAB217224402C690090A5B5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAB217124402C690090A5B5 /* BaseViewController.swift */; };
+		EBAB2178244033200090A5B5 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAB2177244033200090A5B5 /* DataModel.swift */; };
+		EBAB217A244035720090A5B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBAB2179244035720090A5B5 /* Main.storyboard */; };
 		EBFAD24E244028DC00A0BC15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFAD24D244028DC00A0BC15 /* AppDelegate.swift */; };
 		EBFAD250244028DC00A0BC15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFAD24F244028DC00A0BC15 /* SceneDelegate.swift */; };
-		EBFAD252244028DC00A0BC15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFAD251244028DC00A0BC15 /* ViewController.swift */; };
+		EBFAD252244028DC00A0BC15 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFAD251244028DC00A0BC15 /* ListViewController.swift */; };
 		EBFAD257244028DF00A0BC15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBFAD256244028DF00A0BC15 /* Assets.xcassets */; };
 		EBFAD25A244028DF00A0BC15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBFAD258244028DF00A0BC15 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -21,10 +23,12 @@
 		45ACFA74BA889A8764EA118C /* Pods-ListView-Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListView-Assignment.release.xcconfig"; path = "Target Support Files/Pods-ListView-Assignment/Pods-ListView-Assignment.release.xcconfig"; sourceTree = "<group>"; };
 		ABEF85F80094D9719EB30DCA /* Pods-ListView-Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListView-Assignment.debug.xcconfig"; path = "Target Support Files/Pods-ListView-Assignment/Pods-ListView-Assignment.debug.xcconfig"; sourceTree = "<group>"; };
 		EBAB217124402C690090A5B5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		EBAB2177244033200090A5B5 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		EBAB2179244035720090A5B5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		EBFAD24A244028DC00A0BC15 /* ListView-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ListView-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBFAD24D244028DC00A0BC15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBFAD24F244028DC00A0BC15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EBFAD251244028DC00A0BC15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EBFAD251244028DC00A0BC15 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		EBFAD256244028DF00A0BC15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBFAD259244028DF00A0BC15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBFAD25B244028DF00A0BC15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,7 +74,7 @@
 		EBAB217324402CA00090A5B5 /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				EBFAD251244028DC00A0BC15 /* ViewController.swift */,
+				EBFAD251244028DC00A0BC15 /* ListViewController.swift */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -85,6 +89,7 @@
 		EBAB217524402CAD0090A5B5 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
+				EBAB2177244033200090A5B5 /* DataModel.swift */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -93,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				EBFAD256244028DF00A0BC15 /* Assets.xcassets */,
+				EBAB2179244035720090A5B5 /* Main.storyboard */,
 				EBFAD258244028DF00A0BC15 /* LaunchScreen.storyboard */,
 				EBFAD25B244028DF00A0BC15 /* Info.plist */,
 			);
@@ -199,6 +205,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBAB217A244035720090A5B5 /* Main.storyboard in Resources */,
 				EBFAD25A244028DF00A0BC15 /* LaunchScreen.storyboard in Resources */,
 				EBFAD257244028DF00A0BC15 /* Assets.xcassets in Resources */,
 			);
@@ -253,7 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBFAD252244028DC00A0BC15 /* ViewController.swift in Sources */,
+				EBAB2178244033200090A5B5 /* DataModel.swift in Sources */,
+				EBFAD252244028DC00A0BC15 /* ListViewController.swift in Sources */,
 				EBAB217224402C690090A5B5 /* BaseViewController.swift in Sources */,
 				EBFAD24E244028DC00A0BC15 /* AppDelegate.swift in Sources */,
 				EBFAD250244028DC00A0BC15 /* SceneDelegate.swift in Sources */,
