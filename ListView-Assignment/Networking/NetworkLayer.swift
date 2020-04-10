@@ -73,17 +73,15 @@ class NetworkLayer: NSObject {
                 self.task?.earliestBeginDate = beginDate
             }
             
-            if let req = urlRequest as? URLRequest {
-                self.task = urlSessionDefaultConfig.dataTask(with: req)
-                
-                print("==================================== REQUEST ====================================")
-                print("Start Date: - \(Date())")
-                print("Method: \(request.method)")
-                print("URL: \(request.url)")
-                print("Headers: \(urlRequest.allHTTPHeaderFields!)")
-                print("=================================================================================")
-                self.task?.resume()
-            }
+            self.task = urlSessionDefaultConfig.dataTask(with: urlRequest as URLRequest)
+            
+            print("==================================== REQUEST ====================================")
+            print("Start Date: - \(Date())")
+            print("Method: \(request.method)")
+            print("URL: \(request.url)")
+            print("Headers: \(urlRequest.allHTTPHeaderFields!)")
+            print("=================================================================================")
+            self.task?.resume()
         }
     }
     

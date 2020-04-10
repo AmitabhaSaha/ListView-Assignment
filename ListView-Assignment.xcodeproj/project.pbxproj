@@ -18,6 +18,7 @@
 		EBAB218424403ACE0090A5B5 /* SessionManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAB218324403ACE0090A5B5 /* SessionManagerDelegate.swift */; };
 		EBAB218624403AE60090A5B5 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAB218524403AE60090A5B5 /* APIManager.swift */; };
 		EBAB218824404EC60090A5B5 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAB218724404EC60090A5B5 /* ListCell.swift */; };
+		EBAB218A2440713D0090A5B5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EBAB21892440713D0090A5B5 /* README.md */; };
 		EBFAD24E244028DC00A0BC15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFAD24D244028DC00A0BC15 /* AppDelegate.swift */; };
 		EBFAD250244028DC00A0BC15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFAD24F244028DC00A0BC15 /* SceneDelegate.swift */; };
 		EBFAD252244028DC00A0BC15 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFAD251244028DC00A0BC15 /* ListViewController.swift */; };
@@ -39,6 +40,7 @@
 		EBAB218324403ACE0090A5B5 /* SessionManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManagerDelegate.swift; sourceTree = "<group>"; };
 		EBAB218524403AE60090A5B5 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		EBAB218724404EC60090A5B5 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		EBAB21892440713D0090A5B5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EBFAD24A244028DC00A0BC15 /* ListView-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ListView-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBFAD24D244028DC00A0BC15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBFAD24F244028DC00A0BC15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 		EBFAD241244028DC00A0BC15 = {
 			isa = PBXGroup;
 			children = (
+				EBAB21892440713D0090A5B5 /* README.md */,
 				EBFAD24C244028DC00A0BC15 /* ListView-Assignment */,
 				EBFAD24B244028DC00A0BC15 /* Products */,
 				0F5B59B7F0A55A4C05F47707 /* Pods */,
@@ -228,6 +231,7 @@
 			files = (
 				EBAB217A244035720090A5B5 /* Main.storyboard in Resources */,
 				EBFAD25A244028DF00A0BC15 /* LaunchScreen.storyboard in Resources */,
+				EBAB218A2440713D0090A5B5 /* README.md in Resources */,
 				EBFAD257244028DF00A0BC15 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,7 +436,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "ListView-Assignment/Resource/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,7 +457,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "ListView-Assignment/Resource/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
